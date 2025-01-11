@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOBIL - Conférence des sciences sociales</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="logo.png" type="image/png">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+        header {
+            background-color: #9370DB;
+            color: white;
+            padding: 25px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 24px;
+            margin: 0;
+        }
+        nav {
+            display: flex;
+            flex: 1;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+        }
+        nav ul li {
+            margin-left: 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 400;
+        }
+        nav ul li a:hover {
+            color: #fff5f5;
+        }
+        .icons {
+            display: flex;
+            align-items: center;
+            margin-left: 20px;
+        }
+        .icons img {
+            width: 24px;
+            height: 24px;
+            margin-left: 15px;
+        }
+        .hero {
+            position: relative;
+            background-image: url('IMG-20210522-WA0061.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 550px;
+            color: white;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(147, 112, 219, 0.5);
+            z-index: 1;
+        }
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 110px;
+            margin: 0;
+            z-index: 2;
+        }
+        .hero h2 {
+            font-size: 20px;
+            font-weight: 400;
+            margin-bottom: 5px;
+            z-index: 2;
+        }
+        .hero .details {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            font-size: 18px;
+            z-index: 2;
+        }
+        .hero .details img {
+            width: 24px;
+            height: 24px;
+            vertical-align: middle;
+        }
+        .container {
+            padding: 20px;
+            text-align: center;
+        }
+        .card {
+            background-color: white;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+        }
+        .card h2 {
+            font-size: 24px;
+            color: #444;
+        }
+        .card p {
+            font-size: 18px;
+            color: #666;
+        }
+        .button {
+            background-color: #9370DB;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        footer {
+            background-color: #444;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+        .contact-section {
+            background-color: #9370DB;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .contact-section h2 {
+            font-size: 24px;
+        }
+        .contact-section p {
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>SOBIL</h1>
+        <nav>
+            <ul>
+                <li><a href="accueil.html">Accueil</a></li>
+                <li><a href="conference.html">Conférence</a></li>
+                <li><a href="application.html">Application</a></li>
+                <li><a href="equipe.html">Équipe</a></li>
+                <li><a href="contact.html">Contactez-nous</a></li>
+            </ul>
+            <div class="icons">
+                <img src="language-icon.png" alt="Language">
+                <img src="instagram-icon.png" alt="Instagram">
+            </div>
+        </nav>
+    </header>
+
+    <div class="hero" id="accueil">
+        <h2>Une conférence des sciences sociales</h2>
+        <h1>SOBIL</h1>
+        <div class="details">
+            <p><img src="calendar-icon.png" alt="Date"> 26-27 Avril 2025</p>
+            <p><img src="location-icon.png" alt="Location"> Lycée de Saint Joseph</p>
+        </div>
+    </div>
+
+    <div class="container" id="conference">
+        <div class="card">
+            <h2>Conférence</h2>
+            <p>Des ateliers interactifs, des conférences inspirantes et des discussions en petits groupes animés par des experts du domaine.</p>
+            <a href="#" class="button">Voir le programme complet</a>
+        </div>
+    </div>
+
+    <div class="container" id="application">
+        <div class="card">
+            <h2>Application</h2>
+            <p>Les inscriptions sont ouvertes ! Ne manquez pas cette opportunité unique d'apprendre et de réseauter.</p>
+            <a href="#" class="button">S'inscrire maintenant</a>
+        </div>
+    </div>
+
+    <div class="contact-section" id="contact">
+        <h2>Contactez-nous</h2>
+        <p>Email: contact@sobilconference.org</p>
+        <p>Téléphone: +90 123 456 78 90</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 SOBIL | Tous droits réservés</p>
+    </footer>
+</body>
+</html>
